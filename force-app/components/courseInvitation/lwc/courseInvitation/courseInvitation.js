@@ -146,7 +146,7 @@ export default class CourseInvitation extends NavigationMixin(LightningElement) 
 
         createCourseRegistrations({
             courseId: this.recordId,
-            contacts: event.detail
+            contacts: this.contacts
         }).then(result => {
             this.loading = false;
             this.contacts = event.detail;
